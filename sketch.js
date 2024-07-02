@@ -27,7 +27,8 @@ function setup() {
   tex1 = createP();
   tex2 = createP();
   tex3 = createP();
-  
+ 
+
   ratio1 = 1;
   ratio2 = 2;
   ratio_difference = 1;
@@ -159,7 +160,13 @@ function draw() {
   tex3.position(180, 10)
   katex.render(' = ', tex3.elt)
   
-
+  fill(200, 180, 0);
+  textSize(30);
+  text("Find the Golden Ratio", -105, 405);
+  fill(180, 160, 0);
+  textSize(10);
+  text("A P5 curio to accompany Fibonacci Numbers Faster", -105, 435);
+  text("CS691-XVIII project by Sourabh & Cherian", -105, 455);
 }
 
 function drawArrow(base, vec, myColor) {
